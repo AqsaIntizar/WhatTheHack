@@ -1,0 +1,104 @@
+CREATE TABLE USR (
+UID int not null auto_increment,
+LastName varchar(255) not null,
+FirstName varchar(255) not null,
+Email varchar(225) not null,
+ImagePath varchar(225),
+CVPath varchar(225),
+JoinDate date not null,
+City varchar(100),
+constraint pk_USR primary key(UID)
+);
+
+CREATE TABLE STARTUP (
+SID int not null auto_increment,
+Owner_ID int not null,
+About varchar(500) not null,
+Website varchar(225) not null,
+StartupName varchar(225) not null,
+Join_Date varchar(225) not null,
+City varchar(225),
+constraint pk_STARTUP primary key(SID)
+);
+
+CREATE TABLE USR_IN_STARTUP (
+EUID int not null,
+ESID int not null,
+Join_time Time not null,
+CONSTRAINT FK_EUID FOREIGN KEY (EUID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_ESID FOREIGN KEY (ESID)
+    REFERENCES startup(SID)
+);
+
+CREATE TABLE Skill_Class (
+SKID int not null auto_increment,
+Name varchar(225) not null,
+constraint pk_SKID primary key(SKID)
+);
+
+CREATE TABLE Looking_For (
+ESID int not null,
+ESKID int not null,
+CONSTRAINT FK_ESIDLF FOREIGN KEY (ESID)
+    REFERENCES startup(SID),
+CONSTRAINT FK_SKIDLF FOREIGN KEY (ESKID)
+    REFERENCES skill_class(SKID)
+);
+
+CREATE TABLE Ranking (
+EUID int not null,
+total_score int,
+amount_of_votes int not null default 0,
+CONSTRAINT FK_EUIDR FOREIGN KEY (EUID)
+    REFERENCES usr(UID)
+);
+
+CREATE TABLE Chat(
+CID int not null auto_increment,
+constraint pk_CID primary key(CID)
+);
+
+CREATE TABLE Message(
+MID int not null auto_increment,
+SenderID int not null,
+ECID int not null,
+MTime Time not null,
+constraint pk_MID primary key(MID),
+CONSTRAINT FK_UIDM FOREIGN KEY (SenderID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_CIDM FOREIGN KEY (ECID)
+    REFERENCES chat(CID)
+);
+
+CREATE TABLE Applied_for (
+EUID int not null,
+ESID int not null,
+CONSTRAINT FK_EUIDAF FOREIGN KEY (EUID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_ESIDAF FOREIGN KEY (ESID)
+    REFERENCES startup(SID)
+);
+
+CREATE TABLE Skill (
+EUID int not null,
+skilltag varchar(225),
+ESKID int not null,
+CONSTRAINT FK_EUIDSK FOREIGN KEY (EUID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_ESKIDSK FOREIGN KEY (ESKID)
+    REFERENCES skill_class(SKID)
+);
+
+CREATE TABLE User_in_chat (
+EUID int not null,
+ECID int not null,
+CONSTRAINT FK_EUIDUIC FOREIGN KEY (EUID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_ECIDUIC FOREIGN KEY (ECID)
+    REFERENCES chat(CID)
+);
+
+CREATE TABLE website_info (
+about varchar(500)
+);
