@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #dddee0;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+  	visibility: hidden;
+  	display: block;
+  	font-size: 0;
+  	content: "";
+  	clear: both;
+  	height: 0;
+}
+
+
+
+
+
+/*#bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}*/
+
+
+
+
+
+
+header {
+	background-color: #fff;
+	height: 60px;
+	z-index: 998;
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .logo {
+	-ms-flex-align: center;
+    align-items: center;
+    bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 16px;
+    position: absolute;
+    top: 10px;
+    width: 105px;
+}
+
+header .logo img {
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+header .filter-wrapper {
+	display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: none;
+    margin: 0 500px;
+}
+
+header .filter-wrapper li {
+    align-items: center;
+    display: flex;
+    flex: 1 1 100px;
+    height: 60px;
+    position: relative;
+    vertical-align: top;
+    color: #161719;
+    padding: 10px 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header .nav-actions {
+	list-style: none;
+	height: 60px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    width: 380px;
+}
+
+header .nav-actions li {
+	cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    height: 60px;
+    position: relative;
+    vertical-align: top;
+}
+
+header .nav-actions li a {
+	margin-bottom: -1px;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    padding: 8px;
+    color: #a4a4a4;
+}
+
+header .nav-actions li a img {
+	height: 16px;
+}
+
+
+
+
+
+
+
+
+main {
+	margin: 104px 70px;
+}
+
+.list-item {
+	border-radius: 15.543px;
+    box-sizing: border-box;
+    color: #191919;
+    float: left;
+    margin: 0 20px 20px 0;
+    min-height: 320px;
+    position: relative;
+    text-align: left;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(25,25,25,0.2);
+    position: relative;
+}
+
+.image-project {
+	padding-top: 78.21782%;
+    background-color: #f9f9f9;
+    border-radius: 6px 6px 0 0;
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.image-project img {
+	border-radius: 15.543px 15.543px 0 0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-project img:after {
+	opacity: 0;
+	border-radius: 3px 3px 0 0;
+	background-color: #191919;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*transition: opacity 0.5s linear;*/
+}
+
+.item-info {
+	padding: 7px 12px 0 12px;
+}
+
+.subject {
+    font-size: 19px;
+    display: block;
+    font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 5px;
+    overflow: hidden;
+    color: #161719;
+}
+
+.owner {
+	height: 36px;
+    position: relative;
+}
+
+.owner span {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 18px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 13px;
+}
+
+.owner span a {
+	color: #b7b7b7;
+}
+
+.extra {
+    font-size: 11px;
+    font-weight: bold;
+    align-items: center;
+    border-top: 2px #b7b7b7 solid;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: normal;
+    padding: 7px 0;
+    position: relative;
+}
+
+.extra .flag {
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: -1px;
+}
+
+.extra-inner {
+	display: flex;
+    width: 100%;
+}
+
+.extra-inner .icon-wrapper {
+    align-items: center;
+    display: flex;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 13px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.extra-inner img {
+    position: relative;
+    top: -1px;
+    margin-right: 7px;
+    width: 16px;
+}
+
+.extra-inner .amount {
+	margin-top: 2px;
+}
