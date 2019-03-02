@@ -2,28 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WeStartup</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+    <!--<img src="images/bg.png" id="bg">-->
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg">
+        </a>
+
+        <ul class="filter-wrapper">
+            <li>
+                Projects
+            </li>
+
+            <li>
+                All Creative Fields
+            </li>
+
+            <li>
+                Location
+            </li>
+
+            <li>
+                This Week
+            </li>
+        </ul>
+
+        <ul class="nav-actions">
+            <li>
+                <a href="#">
+                    <img src="icons/messages.svg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/notifications.svg">
+                </a>
+            </li>
+        </ul>
+    </header>
+
     <aside>
         <!-- Here comes login panel and stuff -->
     </aside>
 
     <main>
-        <ul id="feed-list">
-            <li>
-                <article>
-                    <img src="uploads/startupImages/startup-default.jpg" alt="PHP Project" title="PHP Project" />
-                    <h2>PHP Project</h2>
-                    <span>by Jan Jansens</span>
-                </article>
-                <section>
-                    <span id="bag"></span>
-                    <span id="views"></span>
-                    <span id="category"></span>
-                </section>
-            </li>
-        </ul>
+        <div class="list-item loading"></div>
     </main>
 
     <script type="text/javascript" src="assets/js/script.js"></script>

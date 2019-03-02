@@ -12,7 +12,7 @@ function init() {
 
 function onMessage(e) {
     let data = e.data;
-    console.log(data);
+    visualiseFeed(JSON.parse(data));
 }
 
 function getFeed() {
@@ -44,5 +44,51 @@ function resolveAfterWebSocketReady() {
         };
 
         FUNC(resolve);
+    });
+}
+
+function visualiseFeed(data) {
+    document.querySelector("main").innerHTML = "";
+
+    data["data"].forEach(startup => {
+        document.querySelector("main").innerHTML += '<div class="list-item">\n' +
+            '            <a href="#" class="image-project">\n' +
+            '                <img src="images/uploads/startupImages/' + startup["imgUrl"] + '">\n' +
+            '            </a>\n' +
+            '            <div class="item-info clearfix">\n' +
+            '                <span>\n' +
+            '                    <a href="#" class="subject">\n' +
+            '                        ' + startup["name"] + '\n' +
+            '                    </a>\n' +
+            '                </span>\n' +
+            '                <div class="owner">\n' +
+            '                    <span>\n' +
+            '                        <a href="#">\n' +
+            '                            by ' + startup["owner"]["name"] + ' ' + startup["owner"]["lastName"] + '\n' +
+            '                        </a>\n' +
+            '                    </span>\n' +
+            '                </div>\n' +
+            '                <div class="extra">\n' +
+            '                    <img src="icons/flag-code.svg" class="flag">\n' +
+            '\n' +
+            '                    <div class="extra-inner">\n' +
+            '                        <span class="icon-wrapper">\n' +
+            '                            <span class="icon-wrapper">\n' +
+            '                                <img src="icons/working.svg">\n' +
+            '                                <span class="amount">\n' +
+            '                                    342\n' +
+            '                                </span>\n' +
+            '                            </span>\n' +
+            '                            <span class="icon-wrapper">\n' +
+            '                                <img src="icons/views.svg">\n' +
+            '                                <span class="amount">\n' +
+            '                                    2499\n' +
+            '                                </span>\n' +
+            '                            </span>\n' +
+            '                        </span>\n' +
+            '                    </div>\n' +
+            '                </div>\n' +
+            '            </div>\n' +
+            '        </div>';
     });
 }

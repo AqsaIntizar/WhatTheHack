@@ -7,30 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ea85d5-e876-474e-b379-31026d082030" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/startuprepository/HCStartupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/startuprepository/StartupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/userrepository/HCUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/userrepository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/SocketHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/brend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/brend.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/WEB-INF/classes/server/WsEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/WEB-INF/classes/server/WsEndPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/westartup-1.0-SNAPSHOT.war/uploads/startupImages/startup-default.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/westartup-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/westartup-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/server/WsEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/server/WsEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/HCLoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/loginrepository/HCLoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/loginrepository/LoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Repositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Repositories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/WsEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WsEndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/startup-default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/uploads/startupImages/startup-default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/uploads/startupImages/startup-default.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,8 +48,8 @@
       <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="18" column="102" lean-forward="true" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
+            <state relative-caret-position="271">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/data/Repositories.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+              <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -630,23 +614,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="westartup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="westartup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="westartup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="westartup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="startupImages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -787,12 +754,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551480893136</updated>
-      <workItem from="1551480898455" duration="12439000" />
+      <workItem from="1551480898455" duration="15474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12439000" />
+    <option name="totallyTimeSpent" value="15474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -924,7 +891,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Repositories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -995,8 +962,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="102" lean-forward="true" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
+        <state relative-caret-position="271">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
