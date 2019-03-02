@@ -13,7 +13,7 @@ public class HCUserRepository implements UserRepository {
 
     public HCUserRepository() {
         users = new ArrayList<>();
-        users.add(new User(0, "John", "Doe", "john@doe.gmail.com", null, "john_doe.png", null, null));
+        users.add(new User(0, "John", "Doe", "john@doe.gmail.com", null, "john_doe.png", null, null, "Neverland"));
     }
 
     @Override

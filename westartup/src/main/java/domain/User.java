@@ -12,8 +12,9 @@ public class User {
     private  String imgUrl;
     private String cvUrl;
     private Date joinDate;
+    private String city;
 
-    public User(int id, String name, String lastName, String email, String pass, String imgUrl, String cvUrl, Date joinDate) {
+    public User(int id, String name, String lastName, String email, String pass, String imgUrl, String cvUrl, Date joinDate, String city) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
@@ -22,10 +23,11 @@ public class User {
         this.imgUrl = imgUrl;
         this.cvUrl = cvUrl;
         this.joinDate = joinDate;
+        this.city = city;
     }
 
     public User(String email, String pass) {
-        this(-1, null, null, email, pass, null, null, null);
+        this(-1, null, null, email, pass, null, null, null, null);
     }
 
     public int getId() {
@@ -90,6 +92,14 @@ public class User {
 
     public void setPass(String pass) {
         this.pass = pass;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     @Override

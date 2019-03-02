@@ -3,6 +3,7 @@ package server;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import data.Repositories;
+import org.pmw.tinylog.Logger;
 
 import javax.websocket.Session;
 import java.util.ArrayList;
@@ -17,7 +18,6 @@ class MessageController {
             responseData.put("action", "feed");
             responseData.put("method", "post");
             responseData.put("data", Repositories.getInstance().getStartupRepository().getStartups());
-
             SocketHelper.send(session, responseData);
         }
     }

@@ -11,9 +11,10 @@ public class HCStartupRepository implements StartupRepository {
 
     public HCStartupRepository() {
         startups = new ArrayList<>();
-        startups.add(new Startup(0, Repositories.getInstance().getUserRepository().getUser(0), "PHP Project"));
-        startups.add(new Startup(1, Repositories.getInstance().getUserRepository().getUser(0), "JAVA Project"));
-        startups.add(new Startup(2, Repositories.getInstance().getUserRepository().getUser(0), "DESIGN Project"));
+        Repositories.getInstance().getUserRepository().getUsers();
+        //startups.add(new Startup(0, Repositories.getInstance().getUserRepository().getUser(1), "PHP Project"));
+        //startups.add(new Startup(1, Repositories.getInstance().getUserRepository().getUser(1), "JAVA Project"));
+        //startups.add(new Startup(2, Repositories.getInstance().getUserRepository().getUser(1), "DESIGN Project"));
     }
 
     @Override
