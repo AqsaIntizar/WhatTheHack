@@ -2,7 +2,7 @@ CREATE TABLE USR (
 UID int not null auto_increment,
 LastName varchar(255) not null,
 FirstName varchar(255) not null,
-Email varchar(225) not null,
+Email varchar(225) UNIQUE not null,
 ImagePath varchar(225),
 CVPath varchar(225),
 JoinDate date not null,
@@ -10,25 +10,19 @@ City varchar(100),
 constraint pk_USR primary key(UID)
 );
 
+
 CREATE TABLE STARTUP (
 SID int not null auto_increment,
 Owner_ID int not null,
 About varchar(500) not null,
-Website varchar(225) not null,
+Website varchar(225),
 StartupName varchar(225) not null,
 Join_Date varchar(225) not null,
 City varchar(225),
-constraint pk_STARTUP primary key(SID)
-);
-
-CREATE TABLE USR_IN_STARTUP (
-EUID int not null,
-ESID int not null,
-Join_time Time not null,
-CONSTRAINT FK_EUID FOREIGN KEY (EUID)
-    REFERENCES usr(UID),
-CONSTRAINT FK_ESID FOREIGN KEY (ESID)
-    REFERENCES startup(SID)
+Image varchar(225),
+constraint pk_STARTUP primary key(SID),
+CONSTRAINT FK_EUIDSTU FOREIGN KEY (EUID)
+    REFERENCES usr(UID)
 );
 
 CREATE TABLE Skill_Class (
@@ -101,4 +95,13 @@ CONSTRAINT FK_ECIDUIC FOREIGN KEY (ECID)
 
 CREATE TABLE website_info (
 about varchar(500)
+);
+
+CREATE TABLE Viewed (
+EUID int not null,
+ESID int not null,
+CONSTRAINT FK_EUIDV FOREIGN KEY (EUID)
+    REFERENCES usr(UID),
+CONSTRAINT FK_ESIDV FOREIGN KEY (ESID)
+    REFERENCES startup(SID)
 );
