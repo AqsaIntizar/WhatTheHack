@@ -1,4 +1,4 @@
-package data;
+package data.loginrepository;
 
 import domain.Login;
 

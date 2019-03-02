@@ -1,4 +1,4 @@
-package data;
+package data.loginrepository;
 
 import domain.Login;
 
@@ -9,7 +9,7 @@ import java.util.List;
 public class HCLoginRepository implements LoginRepository {
     private List<Login> logins;
 
-    HCLoginRepository() {
+    public HCLoginRepository() {
         this.logins = new ArrayList<>();
     }
 
